@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Párttagok</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js"></script>
+    <link rel="icon" href="hun.png">
+</head>
+<body>
+    <main class="container">
+        <section class="mb-3">
+            <h2><b> <img src="viktoriusz-removebg-preview.png">  Adjon hozzá egy közéleti szereplőt <img src="viktoriusz-removebg-preview.png" alt="királyom"> </b></h2>
+            <form id="person-form" action="" method="post">
+                <div class="mb-3">
+                    <label  for="név" class="form-label">név:</label>
+                    <input  type="text" id="név" class="form-control" placeholder="név" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email_input" class="form-label">E-maile:</label>
+                    <input type="email" id="email_input" class="form-control" placeholder="E-mail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cim" class="form-label">Címe:</label>
+                    <input  type="text" id="cim" class="form-control" placeholder="cim" required>
+                </div>
+
+                <button id="gomb" type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2 id="politic"><b> Politikusaink </b></h2>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>név</th>
+                        <th>E-mail</th>
+                        <th>cim</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="people-table">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

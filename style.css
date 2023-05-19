@@ -1,0 +1,24 @@
+#gomb
+{
+    background-color: #fc9003;
+}
+body{
+    background-image: url(../Dolgozat/parlament.jpg);
+}
+#név{
+    background-color: red;
+}
+#cim{
+    background-color: green;
+}
+h2{
+    margin-left: 250px;
+}
+table{
+    background-color: #fc9003;
+    font-family: cursive;
+}
+#politic{
+    margin-left: 500px;
+    text-transform: uppercase;
+}
